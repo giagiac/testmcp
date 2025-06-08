@@ -3,10 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to ByteGrad!</h1>
-      <p>
-        Applicazione di e-learning
-      </p>
+      <h1>
+        App di esempio consiglio corsi
+      </h1>
     </div>
   );
 }
