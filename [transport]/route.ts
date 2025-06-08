@@ -3,7 +3,7 @@ import { z } from "zod";
 
 const handler = createMcpHandler(
   (server) => {
-    server.tool(
+    return server.tool(
       "raccomandazioniCorso",
       "Dai consigli sui corsi in base al livello di esperienza",
       {
@@ -35,7 +35,7 @@ const handler = createMcpHandler(
     sseEndpoint: "/sse",
     streamableHttpEndpoint: "mcp",
     verboseLogs: true,
-    maxDuration: 60,
+    maxDuration: 20,
   }
 );
 
